@@ -1,0 +1,11 @@
+{
+    "name": "mirror/brain-games",
+    "authors": [
+        {
+            "name": "Pimenova Maya",
+            "email": "may-goldenvol@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
