@@ -3,12 +3,14 @@
     "bin": [
       "bin/brain-games"
     ],
+    "homepage": "https://github.com/MayLiAh/project-lvl1-s470",
     "authors": [
         {
             "name": "Pimenova Maya",
             "email": "may-goldenvol@yandex.ru"
         }
     ],
+    "license": "MIT",
     "minimum-stability": "dev",
     "require": {}
 }
