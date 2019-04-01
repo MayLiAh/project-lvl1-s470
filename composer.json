@@ -1,8 +1,11 @@
 {
     "name": "mirror/brain-games",
+    "description": "Console game on PHP",
+    "key-words": ["console", "game"],
     "bin": [
       "bin/brain-games"
     ],
+    "type": "project",
     "homepage": "https://github.com/MayLiAh/project-lvl1-s470",
     "authors": [
         {
@@ -11,6 +14,7 @@
         }
     ],
     "license": "MIT",
+    "prefer-stable": true,
     "minimum-stability": "dev",
     "autoload": {
          "files": ["src/Cli.php"]
