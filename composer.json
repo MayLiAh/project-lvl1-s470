@@ -3,7 +3,8 @@
     "description": "Console game on PHP",
     "key-words": ["console", "game"],
     "bin": [
-      "bin/brain-games"
+      "bin/brain-games",
+      "bin/brain-even"
     ],
     "type": "project",
     "homepage": "https://github.com/MayLiAh/project-lvl1-s470",
