@@ -1,3 +1,9 @@
+Maintainability Badge:  
+[![Maintainability](https://api.codeclimate.com/v1/badges/c0f4e43b5e30b85c29fa/maintainability)](https://codeclimate.com/github/MayLiAh/project-lvl1-s470/maintainability)  
+  
+Travis CL Badge:  
+[![Build Status](https://travis-ci.org/MayLiAh/project-lvl1-s470.svg?branch=master)](https://travis-ci.org/MayLiAh/project-lvl1-s470)  
+  
 **Brain Games** is a small console game.  
   
 You can install it with Composer:  
@@ -7,14 +13,4 @@ You can install it with Composer:
 or watch this video-preview  
   
 [![asciicast](https://asciinema.org/a/Ve6zeU8xnSqZIHlXUs6UZjj5z.svg)](https://asciinema.org/a/Ve6zeU8xnSqZIHlXUs6UZjj5z)  
-  
-Badges from codeclimate:  
-  
-Maintainability Badge:  
-[![Maintainability](https://api.codeclimate.com/v1/badges/c0f4e43b5e30b85c29fa/maintainability)](https://codeclimate.com/github/MayLiAh/project-lvl1-s470/maintainability)  
-  
-Test Coverage Badge:  
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c0f4e43b5e30b85c29fa/test_coverage)](https://codeclimate.com/github/MayLiAh/project-lvl1-s470/test_coverage)  
-  
-Travis CL Badge:  
-[![Build Status](https://travis-ci.org/MayLiAh/project-lvl1-s470.svg?branch=master)](https://travis-ci.org/MayLiAh/project-lvl1-s470)
+
