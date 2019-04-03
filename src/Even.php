@@ -10,7 +10,7 @@ function playEvenGame()
     line("Welcome to the Brain Games!");
     line("Answer \"yes\" if number even otherwise answer \"no\".\n");
     $name = prompt("May I have your name?");
-    line("Hello, %s!", $name);
+    line("Hello, %s!\n", $name);
 
     function isEven($num)
     {
@@ -28,8 +28,11 @@ function playEvenGame()
             line(" '%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
             line("Let's try again, %s!", $name);
             break;
-        } elseif ($i === 2) {
+        } else {
             line("Correct!");
+        }
+
+        if ($i === 2) {
             line("Congratulations, %s!", $name);
         }
     }
