@@ -3,6 +3,7 @@
 <?php
 
     use function BrainGames\Cli\run;
+    require __DIR__."/../src/games/Even.php";
 
     $autoloadPath1 = __DIR__ . '/../../../autoload.php';
     $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -12,4 +13,4 @@
         require_once $autoloadPath2;
     }
 
-    run();
+run($gameInstruction, $gameQuestion, $correctAnswer);
