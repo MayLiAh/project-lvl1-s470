@@ -5,7 +5,8 @@
     "bin": [
       "bin/brain-games",
       "bin/brain-even",
-      "bin/brain-calc"
+      "bin/brain-calc",
+      "bin/brain-gcd"
     ],
     "type": "project",
     "homepage": "https://github.com/MayLiAh/project-lvl1-s470",
@@ -23,7 +24,8 @@
         "files": [
             "src/Cli.php",
             "src/games/Even.php",
-            "src/games/Calc.php"
+            "src/games/Calc.php",
+            "src/games/Gcd.php"
         ]
     },
     "require": {
