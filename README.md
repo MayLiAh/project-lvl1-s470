@@ -18,4 +18,4 @@ or watch this video-preview
   
 [![asciicast](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6.svg)](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6)  
   
-[![asciicast](https://asciinema.org/a/nq419R7CUO1wjgCp6xzJmSYlE.svg)](https://asciinema.org/a/nq419R7CUO
+[![asciicast](https://asciinema.org/a/nq419R7CUO1wjgCp6xzJmSYlE.svg)](https://asciinema.org/a/nq419R7CUO1wjgCp6xzJmSYlE)
