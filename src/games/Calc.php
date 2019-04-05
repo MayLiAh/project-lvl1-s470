@@ -9,7 +9,7 @@
 
 function playCalcGame()
 {
-    $question = function () {
+    $gameQuestion = function () {
         $operators = ['+', '-', '*'];
         $number1 = rand(0, 100);
         $number2 = rand(0, 100);
@@ -18,10 +18,8 @@ function playCalcGame()
         $symbols = [$number1, $currentOperator, $number2];
         return implode(' ', $symbols);
     };
-        
-    $gameQuestion = $question;
 
-    $correctAns = function ($quest) {
+    $correctAnswer = function ($quest) {
         $currentQuest = explode(' ', $quest);
         $num1 = $currentQuest[0];
         $num2 = $currentQuest[2];
@@ -39,8 +37,6 @@ function playCalcGame()
         }
         return $result;
     };
-
-    $correctAnswer = $correctAns;
 
     run(GAME_INSTRUCTION, $gameQuestion, $correctAnswer);
 }
