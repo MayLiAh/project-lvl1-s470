@@ -17,11 +17,13 @@ function run($gameInstruction, $gameBody)
     for ($i = 0; $i < ANSWERS_TO_WIN; $i++) {
         $symbols = $gameBody['symbols']();
         $question = implode(' ', $symbols);
+        $correctAnswer = $gameBody['answer']($symbols);
+
         line("Question: %s", $question);
         $answer = prompt("Your answer");
 
-        if ($answer != $gameBody['answer']($symbols)) {
-            line(" '%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $gameBody['answer']($symbols));
+        if ($answer != $correctAnswer) {
+            line(" '%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
             line("Let's try again, %s!", $name);
             return false;
         } else {
