@@ -1,22 +1,32 @@
 <?php
 
-    namespace BrainGames\Even;
+    namespace BrainGames\Games\Even;
 
-    use function \cli\line;
-    use function \cli\prompt;
+    use function \BrainGames\Cli\run;
 
-        $gameInstruction = "Answer \"yes\" if number even otherwise answer \"no\".";
-        $number = function () {
-            return rand(0, 100);
-        };
-        $gameQuestion = $number;
+function isEven($num)
+{
+    return $num % 2 === 0;
+}
+
+const GAME_INSTRUCTION = "Answer \"yes\" if number even otherwise answer \"no\".\n";
+
+function playEvenGame()
+{
+    $number = function () {
+        return rand(0, 100);
+    };
+    $gameQuestion = $number;
        
-        $isEven = function ($num) {
-            return $num % 2 === 0;
-        };
+    $isEven = function ($num) {
+        return $num % 2 === 0;
+    };
 
-        $correctAns = function ($num) use ($isEven) {
-            return $isEven($num) ? "yes" : "no";
-        };
+    $correctAns = function ($num) {
+        return isEven($num) ? "yes" : "no";
+    };
         
-        $correctAnswer = $correctAns;
+    $correctAnswer = $correctAns;
+
+    run(GAME_INSTRUCTION, $gameQuestion, $correctAnswer);
+}

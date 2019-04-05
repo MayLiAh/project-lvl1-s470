@@ -1,16 +1,18 @@
 <?php
 
-    namespace BrainGames\Calc;
+    namespace BrainGames\Games\Calc;
 
-    use function \cli\line;
-    use function \cli\prompt;
+    use function BrainGames\Cli\run;
 
 
-    $gameInstruction = "What is the result of the expression?\n";
+    const GAME_INSTRUCTION = "What is the result of the expression?\n";
+
+function playCalcGame ()
+{
     $question = function () {
         $operators = ['+', '-', '*'];
-        $number1 = rand(0, 10);
-        $number2 = rand(0, 10);
+        $number1 = rand(0, 100);
+        $number2 = rand(0, 100);
         $operatorIndex = rand(0, 2);
         $currentOperator = $operators[$operatorIndex];
         $symbols = [$number1, $currentOperator, $number2];
@@ -39,3 +41,6 @@
     };
 
     $correctAnswer = $correctAns;
+
+    run(GAME_INSTRUCTION, $gameQuestion, $correctAnswer);
+}

@@ -5,15 +5,16 @@
     use function \cli\line;
     use function \cli\prompt;
 
+    const ANSWERS_TO_WIN = 3;
+
 function run($gameInstruction, $gameQuestion, $correctAnswer)
 {
-    line("Welcome to the Brain Game!\n");
+    line("Welcome to the Brain Game!");
     line("%s", $gameInstruction);
     $name = prompt("May I have your name?");
     line("Hello, %s!\n", $name);
-    $answersToWin = 3;
 
-    for ($i = 0; $i < $answersToWin; $i++) {
+    for ($i = 0; $i < ANSWERS_TO_WIN; $i++) {
         $question = $gameQuestion();
         line("Question: %s", $question);
         $answer = prompt("Your answer");
