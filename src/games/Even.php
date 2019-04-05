@@ -13,13 +13,19 @@ const GAME_INSTRUCTION = "Answer \"yes\" if number even otherwise answer \"no\".
 
 function playEvenGame()
 {
-    $gameQuestion = function () {
-        return rand(0, 100);
+    $gameSymbols = function () {
+        $num = rand(0, 100);
+        return ['number' => $num];
     };
 
-    $correctAnswer = function ($num) {
-        return isEven($num) ? "yes" : "no";
+    $correctAnswer = function ($symbols) {
+        return isEven($symbols['number']) ? "yes" : "no";
     };
 
-    run(GAME_INSTRUCTION, $gameQuestion, $correctAnswer);
+    $gameBody = [
+                 'symbols' => $gameSymbols,
+                 'answer' => $correctAnswer
+                ];
+
+    run(GAME_INSTRUCTION, $gameBody['symbols'], $gameBody['answer']);
 }

@@ -7,7 +7,7 @@
 
     const ANSWERS_TO_WIN = 3;
 
-function run($gameInstruction, $gameQuestion, $correctAnswer)
+function run($gameInstruction, $gameSymbols, $correctAnswer)
 {
     line("Welcome to the Brain Game!");
     line("%s", $gameInstruction);
@@ -15,12 +15,13 @@ function run($gameInstruction, $gameQuestion, $correctAnswer)
     line("Hello, %s!\n", $name);
 
     for ($i = 0; $i < ANSWERS_TO_WIN; $i++) {
-        $question = $gameQuestion();
+        $symbols = $gameSymbols();
+        $question = implode(' ', $symbols);
         line("Question: %s", $question);
         $answer = prompt("Your answer");
 
-        if ($answer != $correctAnswer($question)) {
-            line(" '%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer($question));
+        if ($answer != $correctAnswer($symbols)) {
+            line(" '%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer($symbols));
             line("Let's try again, %s!", $name);
             return false;
         } else {

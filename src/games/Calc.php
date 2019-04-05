@@ -10,20 +10,22 @@
 
 function playCalcGame()
 {
-    $gameQuestion = function () {
+    $gameSymbols = function () {
         $number1 = rand(0, 100);
         $number2 = rand(0, 100);
         $operatorIndex = rand(0, count(OPERATORS) - 1);
         $currentOperator = OPERATORS[$operatorIndex];
-        $symbols = [$number1, $currentOperator, $number2];
-        return implode(' ', $symbols);
+        return [
+                'number1' => $number1,
+                'operator' => $currentOperator,
+                'number2' => $number2
+               ];
     };
 
-    $correctAnswer = function ($quest) {
-        $currentQuest = explode(' ', $quest);
-        $num1 = $currentQuest[0];
-        $num2 = $currentQuest[2];
-        $operator = $currentQuest[1];
+    $correctAnswer = function ($symbols) {
+        $num1 = $symbols['number1'];
+        $num2 = $symbols['number2'];
+        $operator = $symbols['operator'];
 
         switch ($operator) {
             case '+':
@@ -38,5 +40,10 @@ function playCalcGame()
         return $result;
     };
 
-    run(GAME_INSTRUCTION, $gameQuestion, $correctAnswer);
+    $gameBody = [
+                 'symbols' => $gameSymbols,
+                 'answer' => $correctAnswer
+                ];
+
+    run(GAME_INSTRUCTION, $gameBody['symbols'], $gameBody['answer']);
 }
