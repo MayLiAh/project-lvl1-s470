@@ -27,5 +27,5 @@ function playEvenGame()
                  'answer' => $correctAnswer
                 ];
 
-    run(GAME_INSTRUCTION, $gameBody['symbols'], $gameBody['answer']);
+    run(GAME_INSTRUCTION, $gameBody);
 }
