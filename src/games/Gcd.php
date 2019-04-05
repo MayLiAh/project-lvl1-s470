@@ -6,13 +6,13 @@ use function BrainGames\Cli\run;
 
 const GAME_INSTRUCTION = "Find the greatest common divisor of given numbers.\n";
 
-function maxDivisor($a, $b)
+function getMaxDivisor($a, $b)
 {
     if ($a === $b) {
         return $a;
     }
 
-    return ($a > $b) ? maxDivisor($a - $b, $b) : maxDivisor($a, $b - $a);
+    return ($a > $b) ? getMaxDivisor($a - $b, $b) : getMaxDivisor($a, $b - $a);
 }
 
 function playGcdGame()
@@ -29,7 +29,7 @@ function playGcdGame()
     $correctAnswer = function ($symbols) {
         $num1 = $symbols['number1'];
         $num2 = $symbols['number2'];
-        return maxDivisor($num1, $num2);
+        return getMaxDivisor($num1, $num2);
     };
 
     $gameBody = [

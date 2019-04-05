@@ -12,8 +12,7 @@ function playCalcGame()
     $gameSymbols = function () {
         $number1 = rand(0, 100);
         $number2 = rand(0, 100);
-        $operatorIndex = rand(0, count(OPERATORS) - 1);
-        $currentOperator = OPERATORS[$operatorIndex];
+        $currentOperator = OPERATORS[array_rand(OPERATORS)];
         return [
                 'number1' => $number1,
                 'operator' => $currentOperator,
