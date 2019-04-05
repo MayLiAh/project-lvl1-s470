@@ -7,7 +7,7 @@
 
     const GAME_INSTRUCTION = "What is the result of the expression?\n";
 
-function playCalcGame ()
+function playCalcGame()
 {
     $question = function () {
         $operators = ['+', '-', '*'];
