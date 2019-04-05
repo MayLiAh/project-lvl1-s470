@@ -3,7 +3,6 @@
     "description": "Console game on PHP",
     "key-words": ["console", "game"],
     "bin": [
-      "bin/brain-games",
       "bin/brain-even",
       "bin/brain-calc",
       "bin/brain-gcd"
