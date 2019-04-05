@@ -11,21 +11,25 @@ function isEven($num)
 
 const GAME_INSTRUCTION = "Answer \"yes\" if number even otherwise answer \"no\".\n";
 
+function getSymbols()
+{
+    $num = rand(0, 100);
+    return ['number' => $num];
+}
+
+function getAnswer($symbols)
+{
+    return isEven($symbols['number']) ? "yes" : "no";
+}
+
 function playEvenGame()
 {
-    $gameSymbols = function () {
-        $num = rand(0, 100);
-        return ['number' => $num];
+    $questionAndAnswer = function () {
+        $symbols = getSymbols();
+        $question = implode(' ', $symbols);
+        $answer = getAnswer($symbols);
+        return [$question, $answer];
     };
 
-    $correctAnswer = function ($symbols) {
-        return isEven($symbols['number']) ? "yes" : "no";
-    };
-
-    $gameBody = [
-                 'symbols' => $gameSymbols,
-                 'answer' => $correctAnswer
-                ];
-
-    run(GAME_INSTRUCTION, $gameBody);
+    run(GAME_INSTRUCTION, $questionAndAnswer);
 }

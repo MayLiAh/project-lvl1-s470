@@ -7,7 +7,7 @@ use function \cli\prompt;
 
 const ANSWERS_TO_WIN = 3;
 
-function run($gameInstruction, $gameBody)
+function run($gameInstruction, $questionAndAnswer)
 {
     line("Welcome to the Brain Game!");
     line("%s", $gameInstruction);
@@ -15,9 +15,7 @@ function run($gameInstruction, $gameBody)
     line("Hello, %s!\n", $name);
 
     for ($i = 0; $i < ANSWERS_TO_WIN; $i++) {
-        $symbols = $gameBody['symbols']();
-        $question = implode(' ', $symbols);
-        $correctAnswer = $gameBody['answer']($symbols);
+        list($question, $correctAnswer) = $questionAndAnswer();
 
         line("Question: %s", $question);
         $answer = prompt("Your answer");
