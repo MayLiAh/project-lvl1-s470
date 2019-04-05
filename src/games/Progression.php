@@ -7,7 +7,7 @@ use function BrainGames\Engine\run;
 const GAME_INSTRUCTION = "What number is missing in the progression?\n";
 const PROGRESSION_STEP = 6;
 const PROGRESSION_LENGTH = 10;
-const MAX_START = 100 - PROGRESSION_STEP * 10;
+const MAX_START = 99 - PROGRESSION_STEP * 10;
 
 function playProgressionGame()
 {
