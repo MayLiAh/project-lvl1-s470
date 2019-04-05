@@ -1,11 +1,11 @@
 <?php
 
-    namespace BrainGames\Cli;
+namespace BrainGames\Cli;
 
-    use function \cli\line;
-    use function \cli\prompt;
+use function \cli\line;
+use function \cli\prompt;
 
-    const ANSWERS_TO_WIN = 3;
+const ANSWERS_TO_WIN = 3;
 
 function run($gameInstruction, $gameBody)
 {

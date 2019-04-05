@@ -1,12 +1,11 @@
 <?php
 
-    namespace BrainGames\Games\Calc;
+namespace BrainGames\Games\Calc;
 
-    use function BrainGames\Cli\run;
+use function BrainGames\Cli\run;
 
-
-    const GAME_INSTRUCTION = "What is the result of the expression?\n";
-    const OPERATORS = ['+', '-', '*'];
+const GAME_INSTRUCTION = "What is the result of the expression?\n";
+const OPERATORS = ['+', '-', '*'];
 
 function playCalcGame()
 {

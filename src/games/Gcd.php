@@ -1,11 +1,10 @@
 <?php
 
-    namespace BrainGames\Games\Gcd;
+namespace BrainGames\Games\Gcd;
 
-    use function BrainGames\Cli\run;
+use function BrainGames\Cli\run;
 
-
-    const GAME_INSTRUCTION = "Find the greatest common divisor of given numbers.\n";
+const GAME_INSTRUCTION = "Find the greatest common divisor of given numbers.\n";
 
 function maxDivisor($a, $b)
 {
