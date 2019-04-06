@@ -18,4 +18,7 @@ or watch this video-preview
   
 [![asciicast](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6.svg)](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6)  
   
-[![asciicast](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn.svg)](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn)
+[![asciicast](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn.svg)](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn)  
+  
+[![asciicast](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2.svg)](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2)
+
