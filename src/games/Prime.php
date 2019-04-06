@@ -7,10 +7,10 @@ use function \BrainGames\Engine\run;
 function isPrime($num)
 {
     if ($num <= 2) {
-        return $num === 2 ? true : false;
+        return $num === 2;
     }
 
-    for ($i = 2; $i * $i <= $num; $i++) {
+    for ($i = 2; $i <= sqrt($num); $i++) {
         if ($num % $i === 0) {
             return false;
         }
@@ -23,11 +23,11 @@ const GAME_INSTRUCTION = "Answer \"yes\" if given number is prime. Otherwise ans
 
 function playPrimeGame()
 {
-    $generateQuestAndAns = function () {
+    $generateQuestionAndAnswer = function () {
         $question = rand(0, 100);
         $answer = isPrime($question) ? 'yes' : 'no';
         return [$question, $answer];
     };
 
-    run(GAME_INSTRUCTION, $generateQuestAndAns);
+    run(GAME_INSTRUCTION, $generateQuestionAndAnswer);
 }

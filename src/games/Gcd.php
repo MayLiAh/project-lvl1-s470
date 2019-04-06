@@ -17,7 +17,7 @@ function getMaxDivisor($a, $b)
 
 function playGcdGame()
 {
-    $questionAndAnswer = function () {
+    $generateQuestionAndAnswer = function () {
         $number1 = rand(1, 100);
         $number2 = rand(1, 100);
         $question = "$number1 $number2";
@@ -25,5 +25,5 @@ function playGcdGame()
         return [$question, $answer];
     };
 
-    run(GAME_INSTRUCTION, $questionAndAnswer);
+    run(GAME_INSTRUCTION, $generateQuestionAndAnswer);
 }

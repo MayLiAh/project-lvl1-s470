@@ -24,7 +24,7 @@ function getAnswer($num1, $num2, $operator)
 
 function playCalcGame()
 {
-    $generateQuestAndAns = function () {
+    $generateQuestionAndAnswer = function () {
         $number1 = rand(0, 100);
         $number2 = rand(0, 100);
         $operator = OPERATORS[array_rand(OPERATORS)];
@@ -33,5 +33,5 @@ function playCalcGame()
         return [$question, $answer];
     };
 
-    run(GAME_INSTRUCTION, $generateQuestAndAns);
+    run(GAME_INSTRUCTION, $generateQuestionAndAnswer);
 }
