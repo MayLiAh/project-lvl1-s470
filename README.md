@@ -24,6 +24,6 @@ or watch this video-preview
 **brain-progression**  
 [![asciicast](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn.svg)](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn)  
   
-**brain-even**  
+**brain-prime**  
 [![asciicast](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2.svg)](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2)
 
