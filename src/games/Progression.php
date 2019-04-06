@@ -5,40 +5,38 @@ namespace BrainGames\Games\Progression;
 use function BrainGames\Engine\run;
 
 const GAME_INSTRUCTION = "What number is missing in the progression?\n";
-const PROGRESSION_STEP = 6;
-const PROGRESSION_LENGTH = 10;
-const MAX_START = 99 - PROGRESSION_STEP * 10;
+const LENGTH = 10;
 
-function getSymbols()
+function generateProgression()
 {
-    $progressionStart = rand(0, MAX_START);
+    $step = rand(2, 7);
+    $maxStart = 99 - $step * 9;
+    $start = rand(0, $maxStart);
     $currentProgression = [];
-    for ($i = 0; $i < PROGRESSION_LENGTH; $i++) {
-        $currentProgression[] = $progressionStart;
-        $progressionStart += PROGRESSION_STEP;
+    $value = $start;
+    for ($i = 0; $i < LENGTH; $i++) {
+        $currentProgression[] = $value;
+        $value += $step;
     }
     $numberIndex = array_rand($currentProgression);
     $currentProgression[$numberIndex] = '..';
-    return $currentProgression;
+    return [$start, $step, $numberIndex, $currentProgression];
 }
 
-function getAnswer($symbols)
+function getAnswer($start, $step, $key)
 {
-    $numberKey = array_search('..', $symbols);
-    if ($numberKey !== count($symbols) - 1) {
-        return $symbols[$numberKey + 1] - PROGRESSION_STEP;
-    }
-    return $symbols[$numberKey - 1] + PROGRESSION_STEP;
+    return $start + $step * $key;
 }
 
 function playProgressionGame()
 {
-    $questionAndAnswer = function () {
-        $symbols = getSymbols();
-        $question = implode(' ', $symbols);
-        $answer = getAnswer($symbols);
+    $generateQuestAndAns = function () {
+        list($start, $step, $key, $progression) = generateProgression();
+        $reversedOrNo = rand(0, 1);
+        $question = $reversedOrNo === 0 ? implode(' ', $progression) : implode(' ', array_reverse($progression));
+        $answer = getAnswer($start, $step, $key);
         return [$question, $answer];
     };
 
-    run(GAME_INSTRUCTION, $questionAndAnswer);
+    run(GAME_INSTRUCTION, $generateQuestAndAns);
 }
