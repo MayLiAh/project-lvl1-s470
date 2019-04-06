@@ -12,13 +12,18 @@ You can install it with Composer:
   
 or watch this video-preview  
   
+**brain-even**  
 [![asciicast](https://asciinema.org/a/U5KGFaAzWl9Es247DrPCcEcK5.svg)](https://asciinema.org/a/U5KGFaAzWl9Es247DrPCcEcK5)  
   
+**brain-calc**  
 [![asciicast](https://asciinema.org/a/LUpTu9caD8pfsJZLtO6TWDzSw.svg)](https://asciinema.org/a/LUpTu9caD8pfsJZLtO6TWDzSw)  
   
+**brain-gcd**  
 [![asciicast](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6.svg)](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6)  
   
+**brain-progression**  
 [![asciicast](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn.svg)](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn)  
   
+**brain-even**  
 [![asciicast](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2.svg)](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2)
 
