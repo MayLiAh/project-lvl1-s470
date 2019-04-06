@@ -11,25 +11,13 @@ function isEven($num)
 
 const GAME_INSTRUCTION = "Answer \"yes\" if number even otherwise answer \"no\".\n";
 
-function getSymbols()
-{
-    $num = rand(0, 100);
-    return ['number' => $num];
-}
-
-function getAnswer($symbols)
-{
-    return isEven($symbols['number']) ? "yes" : "no";
-}
-
 function playEvenGame()
 {
-    $questionAndAnswer = function () {
-        $symbols = getSymbols();
-        $question = implode(' ', $symbols);
-        $answer = getAnswer($symbols);
+    $generateQuestAndAns = function () {
+        $question = rand(0, 100);
+        $answer = isEven($question) ? 'yes' : 'no';
         return [$question, $answer];
     };
 
-    run(GAME_INSTRUCTION, $questionAndAnswer);
+    run(GAME_INSTRUCTION, $generateQuestAndAns);
 }
