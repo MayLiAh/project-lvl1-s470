@@ -25,5 +25,6 @@ or watch this video-preview
 [![asciicast](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn.svg)](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn)  
   
 **brain-prime**  
-[![asciicast](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2.svg)](https://asciinema.org/a/gFF6zNxdj0xNOpa0C6LIJlPH2)
+[![asciicast](https://asciinema.org/a/QEvUJaiz4n4mwgcLtL5wuws7U.svg)](https://asciinema.org/a/QEvUJaiz4n4mwgcLtL5wuws7U)
+
 
