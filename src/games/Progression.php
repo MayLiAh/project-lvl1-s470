@@ -9,9 +9,9 @@ const LENGTH = 10;
 
 function random()
 {
-  $num1 = rand(2, 7);
-  $num2 = rand(-2, -7);
-  return array_rand([$num1 => 'positive', $num2 => 'negative']);
+    $num1 = rand(2, 7);
+    $num2 = rand(-2, -7);
+    return array_rand([$num1 => 'positive', $num2 => 'negative']);
 }
 
 function generateProgression($start, $step)
