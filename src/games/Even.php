@@ -9,7 +9,7 @@ function isEven($num)
     return $num % 2 === 0;
 }
 
-const GAME_INSTRUCTION = "Answer \"yes\" if number even otherwise answer \"no\".\n";
+const GAME_INSTRUCTION = 'Answer "yes" if number even otherwise answer "no".';
 
 function playEvenGame()
 {

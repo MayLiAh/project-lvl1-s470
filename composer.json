@@ -18,7 +18,7 @@
         }
     ],
     "scripts": {
-    "phpcs": "phpcs"
+        "phpcs": "phpcs"
     },
     "license": "MIT",
     "autoload": {

@@ -19,7 +19,7 @@ function isPrime($num)
     return true;
 }
 
-const GAME_INSTRUCTION = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".\n";
+const GAME_INSTRUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function playPrimeGame()
 {
