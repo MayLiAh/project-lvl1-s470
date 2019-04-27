@@ -10,21 +10,15 @@ You can install it with Composer:
   
 ```$ composer require mirror/brain-games```  
   
-or watch this video-preview  
+Games:  
   
-**brain-even**  
-[![asciicast](https://asciinema.org/a/U5KGFaAzWl9Es247DrPCcEcK5.svg)](https://asciinema.org/a/U5KGFaAzWl9Es247DrPCcEcK5)  
+**brain-even** - look at number and answer, is it even?  
   
-**brain-calc**  
-[![asciicast](https://asciinema.org/a/LUpTu9caD8pfsJZLtO6TWDzSw.svg)](https://asciinema.org/a/LUpTu9caD8pfsJZLtO6TWDzSw)  
+**brain-prime** -  look at number and answer, is it prime?  
   
-**brain-gcd**  
-[![asciicast](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6.svg)](https://asciinema.org/a/mTWkl1CINRcBHUEksnzKuWll6)  
+**brain-calc** - enter result of shown operation.  
   
-**brain-progression**  
-[![asciicast](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn.svg)](https://asciinema.org/a/p81FzsBwqpk1ekDre1Djr1grn)  
+**brain-gcd** - find and enter greatest common divisor of shown numbes.  
   
-**brain-prime**  
-[![asciicast](https://asciinema.org/a/QEvUJaiz4n4mwgcLtL5wuws7U.svg)](https://asciinema.org/a/QEvUJaiz4n4mwgcLtL5wuws7U)
-
+**brain-progression** - enter the missing number.  
 
